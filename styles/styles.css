@@ -24,15 +24,6 @@ body {
     }
     
     
-#nav {
-    width: 20%;
-    padding: 0;
-    font-family: Arial;
-    color: #e6e6e6;
-    font-weight: bold;
-    }
-    
-    
 .lastfmthing {
     float: left;
     color: #e6e6e6;
@@ -105,4 +96,29 @@ a:hover {
 
 #heart {
     margin: 0px 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  width: 20%;
+  padding: 0;
+  font-family: Arial;
+  color: #e6e6e6;
+  font-weight: bold;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.container div {
+  background-color: black;
+  margin: 2px;
+  padding: 2px;
+  font-family: Arial;
+  color: #e6e6e6;
+  font-weight: bold;
 }

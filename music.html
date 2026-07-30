@@ -2,15 +2,129 @@
 <html>
 
 <head>
-  <title>music and such</title>
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" type="image/x-icon" href="media/logo.ico">
+    <title>Aching Hands</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="media/logo.ico">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-  <h1>were back</h1>
-  <p>its back were back
-  </p>
+
+    <nav class="menu" id="nav">
+        <span class="nav-item active">
+            <span class="icon">
+                <i data-feather="home"></i>
+            </span>
+            <a href="https://achinghands.mlemrecords.com/">Home</a>
+        </span>
+        <span class="nav-item">
+            <span class="icon">
+                <i data-feather="search"></i>
+            </span>
+            <a href="https://achinghands.mlemrecords.com/music">Music</a>
+        </span>
+        <span class="nav-item">
+            <span class="icon">
+            </span>
+            <a href="https://achinghands.mlemrecords.com/pictures">Pictures</a>
+        </span>
+        <span class="nav-item">
+            <span class="icon">
+                <i data-feather="star"></i>
+            </span>
+            <a href="https://achinghands.mlemrecords.com/texts">Texts</a>
+        </span>
+        <span class="nav-item">
+            <span class="icon">
+            </span>
+            <a href="https://achinghands.mlemrecords.com/portfolio">Portfolio</a>
+        </span>
+    </nav>
+    <span>-----------------------------------------------------------------</span>
+
+    <br>
+    <div class="container">
+        <div style="background-color: teal;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial;
+    float:center;
+    color: #e6e6e6;">Aching Hands and related music</div>
+    </div>
+    <br>
+        <br>
+
+    <div class="container">
+        <span style="background-color: teal;
+    font-size: 16px;
+    margin: 1px;
+    font-family: Courier;
+    float:center;
+    color: #e6e6e6">
+            Click title to play. Click download to load that track down! Prev and next not operational atm :(
+        </span>
+
+
+    </div>
+    <br>
+
+    <span>-----------------------------------------------------------------</span>  
+
+
+    <div class="sidebar">
+
+        <h2>Ambient demo</h2>
+        <ul>
+            <li data-src="media/Port_of_Spain_Trinidad_v10.mp3"> Port_of_Spain_Trinidad_v10.mp3 / <a href="media/Port_of_Spain_Trinidad_v10.mp3" download>Download</a> </li>
+        </ul>
+    </div>
+
+
+    <div class="sidebar">
+        <h2>Guitar indie guitar demo</h2>
+        <ul>
+            <li data-src="media/younger_v6.2.mp3"> younger_v6.2.mp3 / <a href="media/younger_v6.2.mp3" download>Download</a> </li> 
+            <li data-src="media/season_song_v2.mp3"> season_song_v2.mp3 / <a href="media/season_song_v2.mp3" download>Download</a> </li>
+            <li data-src="media/OLDER_V5.mp3"> OLDER_V5.mp3 / <a href="media/OLDER_V5.mp3" download>Download</a> </li>
+        </ul>
+    </div>
+
+    <div class="sidebar">
+        <h2>Electronic, dance demo</h2>
+        <ul>
+            <li data-src="media/Flight_fm_-_KITYNT_Remix.mp3"> Flight_fm_-_KITYNT_Remix.mp3 / <a href="Flight_fm_-_KITYNT_Remix.mp3" download>Download</a> </li>
+            <li data-src="media/Strobe_-_KITYNT_remix.mp3"> Strobe_-_KITYNT_remix.mp3 / <a href="Strobe_-_KITYNT_remix.mp3" download>Download</a> </li>
+            <li data-src="media/Shopping_bag_v11.mp3"> Shopping_bag_v11.mp3 / <a href="Shopping_bag_v11.mp3" download>Download</a> </li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="mainDiv">
+
+        <!-- Audio element (hidden, no controls) -->
+        <audio id="audioPlayer" src="media/younger_v6.2.mp3"></audio>
+
+        <!-- Custom Controls -->
+        <div class="controls">
+            <button id="prevBtn">⏮</button>
+            <button id="playBtn">▶</button>
+            <button id="pauseBtn">⏸</button>
+            <button id="nextBtn">⏭</button>
+        </div>
+
+        <div class="progress-container">
+            <input type="range" id="progressBar" value="0" min="0" step="1">
+        </div>
+        <div class="time-display">
+            <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+        </div>
+
+    </div>
+
 
 </body>
 

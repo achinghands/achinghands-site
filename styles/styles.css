@@ -1,71 +1,86 @@
+@media screen and (max-width:600px) {
+  div.flex-container {
+    flex-direction: column;
+  }
+}
+
+.nav-item {
+	flex-direction: row;
+    background-color: teal;
+    padding: 1px;
+    margin: 1px;
+	font-size: 16px;
+    font-weight:bold;
+	line-height: 1px;
+	align-items: left;
+
+	a {
+		color: #e6e6e6;
+		text-decoration: none;
+		padding: 1px;
+	}
+}
+
 body {
-    padding:0;
-    background-color: #0b0b0b; 
+    padding: 0;
+    background-color: #0b0b0b;
     background-image: url('../media/me.jpg');
     font-family: Arial;
-    }
+    margin: 0;
+    transition: background 0.3s, color 0.3s;
+}
 
 .header {
     padding: 0;
     font-family: Arial;
     font-size: 30px;
     color: #e6e6e6;
-    font-weight: bold;
-    }
-    
-    
+}
+
+
 #header2 {
     clear: left;
     padding: 0;
     color: #e6e6e6;
+    background-color:#3f66ac;
     font-family: Arial;
     font-size: 20px;
-    font-weight: bold;
-    }
-    
-    
-.lastfmthing {
-    float: left;
-    color: #e6e6e6;
-    font-size: 20; 
-    font-family: Arial;
-    width: 20%;
-    }
-    
-    
+}
+
+
 .para {
-    background-color: teal; 
+    background-color: teal;
     color: #e6e6e6;
     font-family: Courier;
-    }
+}
 
 
 .embed {
     float: left;
-    background-color:  #0b0b0b;
+    background-color: #0b0b0b;
     color: #e6e6e6;
     font-family: courier;
-  }
+}
 
-  
+
 .text {
     float: left;
     color: #e6e6e6;
-    font-size: 20px; 
+    font-size: 20px;
     font-family: Arial;
-    }
-  
-  
+}
+
+
 .footer {
     text-align: right;
     color: #e6e6e6;
     font-family: courier;
-  }
-  
-  
+}
+
+
 .link {
-  text-decoration: none;
-  color:#b30000;
+    text-decoration: none;
+    color: #f7abab;;
 }
 
 html {
@@ -80,10 +95,11 @@ table {
     vertical-align: middle;
 }
 
-a {
-    text-decoration: none;
-    color: #b30000;
-}
+	a {
+		color: #e6e6e6;
+		text-decoration: none;
+		padding: 1px;
+	}
 
 #track {
     font-weight: bold;
@@ -94,31 +110,153 @@ a:hover {
     color: #b30000;
 }
 
-#heart {
-    margin: 0px 10px;
-}
-
 .container {
-  display: flex;
-  flex-direction: row;
-  background-color: black;
-  width: 20%;
-  padding: 0;
-  font-family: Arial;
-  color: #e6e6e6;
-  font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: Black;
+    font-family: Arial;
+    color: #e6e6e6;
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: row;
-}
 
 .container div {
-  background-color: black;
-  margin: 2px;
-  padding: 2px;
+    background-color: teal;
+    margin: 1px;
+    padding: 1px;
+    font-family: Arial;
+    color: #e6e6e6;
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* ---------- SHARED STYLES ---------- */
+.sidebar {
+  width: 30%;
+  height: 100%;
+  padding: 0px;
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: Courier;
+    color: #e6e6e6; 
+}
+
+.sidebar h2 {
+      display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1px;
   font-family: Arial;
-  color: #e6e6e6;
-  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+  background-color: rgb(0, 100, 100);
+}
+
+.sidebar ul {
+      display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.sidebar ul li {
+  padding: 1px;
+  background-color: rgb(0, 50, 50);
+  margin-bottom: 3px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  margin-bottom: 1px;
+  float:left;
+  border-radius: 0px;
+}
+    
+.controls {
+  margin-bottom: 1px;
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+}
+
+.controls button {
+  width: 30px;
+  height: 30px;
+  color: black;
+  font-size: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.controls button:active {
+  transform: scale(0.95);
+}
+
+.progress-container {
+  width: 80%;
+  margin-top: 15px;
+}
+
+#progressBar {
+  width: 100%;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 5px;
+  outline: none;
+  background: #444;
+}
+
+#progressBar::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 5px;
+}
+
+#progressBar::-moz-range-track {
+  height: 6px;
+  border-radius: 5px;
+}
+
+#progressBar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -4.5px;
+}
+
+#progressBar::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.time-display {
+  margin-top: 8px;
+  font-size: 14px;
+  font-family: courier;
+}
+
+.musicImage.playing {
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }

@@ -1,24 +1,24 @@
 @media screen and (max-width:600px) {
-  div.flex-container {
-    flex-direction: column;
-  }
+    div.flex-container {
+        flex-direction: column;
+    }
 }
 
 .nav-item {
-	flex-direction: row;
+    flex-direction: row;
     background-color: teal;
     padding: 1px;
     margin: 1px;
-	font-size: 16px;
-    font-weight:bold;
-	line-height: 1px;
-	align-items: left;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1px;
+    align-items: left;
 
-	a {
-		color: #e6e6e6;
-		text-decoration: none;
-		padding: 1px;
-	}
+    a {
+        color: #e6e6e6;
+        text-decoration: none;
+        padding: 1px;
+    }
 }
 
 body {
@@ -42,7 +42,7 @@ body {
     clear: left;
     padding: 0;
     color: #e6e6e6;
-    background-color:#3f66ac;
+    background-color: #3f66ac;
     font-family: Arial;
     font-size: 20px;
 }
@@ -80,7 +80,8 @@ body {
 
 .link {
     text-decoration: none;
-    color: #f7abab;;
+    color: #f7abab;
+    ;
 }
 
 html {
@@ -95,11 +96,11 @@ table {
     vertical-align: middle;
 }
 
-	a {
-		color: #e6e6e6;
-		text-decoration: none;
-		padding: 1px;
-	}
+a {
+    color: #e6e6e6;
+    text-decoration: none;
+    padding: 1px;
+}
 
 #track {
     font-weight: bold;
@@ -132,131 +133,162 @@ a:hover {
 
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* ---------- SHARED STYLES ---------- */
 .sidebar {
-  width: 30%;
-  height: 100%;
-  padding: 0px;
-  display: flex;
+    width: 33%;
+    height: 100%;
+    padding: 0px;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     font-family: Courier;
-    color: #e6e6e6; 
+    color: #e6e6e6;
 }
 
 .sidebar h2 {
-      display: flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 1px;
-  font-family: Arial;
-  font-size: 16px;
-  text-align: left;
-  background-color: rgb(0, 100, 100);
+    font-family: Arial;
+    font-size: 16px;
+    text-align: left;
+    background-color: rgb(0, 100, 100);
 }
 
 .sidebar ul {
-      display: flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     list-style: none;
 }
 
 .sidebar ul li {
-  padding: 1px;
-  background-color: rgb(0, 50, 50);
-  margin-bottom: 3px;
-  cursor: pointer;
-  color: inherit;
+    padding: 1px;
+    background-color: rgb(0, 50, 50);
+    margin-bottom: 3px;
+    cursor: pointer;
+    color: inherit;
 }
 
 .mainDiv {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 25%;
-  margin-bottom: 1px;
-  float:left;
-  border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin-bottom: 1px;
+    float: left;
+    border-radius: 0px;
 }
-    
+
 .controls {
-  margin-bottom: 1px;
-  display: flex;
-  justify-content: center;
-  gap: 7px;
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: center;
+    gap: 7px;
 }
 
 .controls button {
-  width: 30px;
-  height: 30px;
-  color: black;
-  font-size: 12px;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    color: black;
+    font-size: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .controls button:active {
-  transform: scale(0.95);
+    transform: scale(0.95);
 }
 
 .progress-container {
-  width: 80%;
-  margin-top: 15px;
+    width: 80%;
+    margin-top: 15px;
 }
 
 #progressBar {
-  width: 100%;
-  cursor: pointer;
-  -webkit-appearance: none;
-  appearance: none;
-  height: 6px;
-  border-radius: 5px;
-  outline: none;
-  background: #444;
+    width: 100%;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 6px;
+    border-radius: 5px;
+    outline: none;
+    background: #444;
 }
 
 #progressBar::-webkit-slider-runnable-track {
-  height: 6px;
-  border-radius: 5px;
+    height: 6px;
+    border-radius: 5px;
 }
 
 #progressBar::-moz-range-track {
-  height: 6px;
-  border-radius: 5px;
+    height: 6px;
+    border-radius: 5px;
 }
 
 #progressBar::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  cursor: pointer;
-  margin-top: -4.5px;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -4.5px;
 }
 
 #progressBar::-moz-range-thumb {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  cursor: pointer;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .time-display {
-  margin-top: 8px;
-  font-size: 14px;
-  font-family: courier;
+    margin-top: 8px;
+    font-size: 14px;
+    font-family: courier;
 }
 
 .musicImage.playing {
-  animation: spin 5s linear infinite;
+    animation: spin 5s linear infinite;
 }
 
 @keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Gallery Images */
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
 }

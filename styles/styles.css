@@ -115,7 +115,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: Black;
+    background-color: #0c0c0c;
     font-family: Arial;
     color: #e6e6e6;
 }

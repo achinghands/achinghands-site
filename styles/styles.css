@@ -23,7 +23,7 @@
 
 body {
     padding: 0;
-    background-color: #0b0b0b;
+    background-color: #0d0d0d;
     background-image: url('../media/me.jpg');
     font-family: Arial;
     margin: 0;
@@ -57,7 +57,7 @@ body {
 
 .embed {
     float: left;
-    background-color: #0b0b0b;
+    background-color: #0d0d0d;
     color: #e6e6e6;
     font-family: courier;
 }
@@ -115,7 +115,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #0c0c0c;
+    background-color: #0d0d0d;
     font-family: Arial;
     color: #e6e6e6;
 }
